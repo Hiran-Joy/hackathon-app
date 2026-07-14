@@ -1,33 +1,20 @@
-<<<<<<< HEAD
 import "./App.css";
-<<<<<<< HEAD
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import NavigationBar from "./components/NavigationBar";
+import AddTeam from "./components/AddTeam";
+import ViewTeam from "./components/ViewTeam";
 
 function App() {
   return (
     <BrowserRouter>
       <NavigationBar />
-    </BrowserRouter>
-=======
-import ViewTeam from "./components/ViewTeam";
->>>>>>> development
-=======
-import './App.css';
-import AddTeam from './components/AddTeam';
->>>>>>> development
 
-function App() {
-  return (
-    <>
-<<<<<<< HEAD
-      <ViewTeam />
-=======
-      <AddTeam />
->>>>>>> development
-    </>
->>>>>>> development
+      <Routes>
+        <Route path="/add" element={<AddTeam />} />
+        <Route path="/view" element={<ViewTeam />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
