@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
 
@@ -8,6 +9,16 @@ function App() {
     <BrowserRouter>
       <NavigationBar />
     </BrowserRouter>
+=======
+import './App.css';
+import AddTeam from './components/AddTeam';
+
+function App() {
+  return (
+    <>
+      <AddTeam />
+    </>
+>>>>>>> development
   );
 }
 
